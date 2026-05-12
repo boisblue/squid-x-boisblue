@@ -10,7 +10,7 @@ export default function SwapWidget() {
       "theme": {
         "borderRadius": {
           "button-lg-primary": "3.75rem",
-          "button-lg-secondary": "3.75rem",
+          "button-lg-secondary": "3.45rem",
           "button-lg-tertiary": "3.75rem",
           "button-md-primary": "1.25rem",
           "button-md-secondary": "1.25rem",
