@@ -1,0 +1,44 @@
+name: Squid X Boisblue - Base Builder
+
+on:
+  schedule:
+    - cron: '0 15 * * *'     # Daily
+  workflow_dispatch:
+
+jobs:
+  daily-commits:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: 10 Random Config Commits
+        run: |
+          for i in {1..10}; do
+            node - << 'EOF'
+const fs = require('fs');
+let content = fs.readFileSync('components/SwapWidget.jsx', 'utf8');
+const templates = JSON.parse(fs.readFileSync('templates.json', 'utf8')).templates;
+const random = templates[Math.floor(Math.random() * templates.length)];
+
+const regex = new RegExp(`("${random.key}":\\s*")([^"]*)(")`);
+content = content.replace(regex, `"${random.key}": "${random.val}"`);
+
+fs.writeFileSync('components/SwapWidget.jsx', content);
+console.log(`Commit ${i}/10 | ${random.key} → ${random.val}`);
+EOF
+
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add components/SwapWidget.jsx
+            git commit -m "chore: daily random config #${i}/10 - Base Builder"
+            
+            sleep $((RANDOM % 20 + 10))
+          done
+
+      - name: Push commits
+        run: git push
