@@ -1,4 +1,5 @@
 name: Squid X Boisblue - Base Builder
+
 on:
   schedule:
     - cron: '0 15 * * *'
@@ -7,43 +8,44 @@ on:
 jobs:
   daily-commits:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 20
 
-      - name: Create commit script
-        run: |
-          cat > commit_script.js << 'SCRIPTEOF'
-          const fs = require('fs');
-          const i = process.argv[2];
-
-          let content = fs.readFileSync('components/SwapWidget.jsx', 'utf8');
-          const templates = JSON.parse(fs.readFileSync('templates.json', 'utf8')).templates;
-          const random = templates[Math.floor(Math.random() * templates.length)];
-
-          // Escape dots in key for regex
-          const escapedKey = random.key.replace(/\./g, '\\.');
-          const regex = new RegExp(`("${escapedKey}":\\s*")([^"]*)(")`, 'g');
-          const newContent = content.replace(regex, `$1${random.val}$3`);
-
-          fs.writeFileSync('components/SwapWidget.jsx', newContent);
-          console.log(`Commit ${i}/10 | ${random.key} → ${random.val}`);
-          SCRIPTEOF
-
-      - name: 10 Random Config Commits
+      - name: Git config
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          for i in {1..10}; do
+      - name: Generate random commits
+        run: |
+          COMMIT_COUNT=0
+
+          for i in {1..20}; do
+            if [ "$COMMIT_COUNT" -ge 10 ]; then
+              break
+            fi
+
             node commit_script.js $i
+
             git add components/SwapWidget.jsx
-            git commit -m "chore: daily random config #${i}/10 - Base Builder"
-            sleep $((RANDOM % 20 + 10))
+
+            if git diff --cached --quiet; then
+              echo "⏭️ No changes"
+              continue
+            fi
+
+            COMMIT_COUNT=$((COMMIT_COUNT + 1))
+
+            git commit -m "chore: random config #${COMMIT_COUNT}/10"
+
+            sleep $((RANDOM % 10 + 5))
           done
 
       - name: Push commits
