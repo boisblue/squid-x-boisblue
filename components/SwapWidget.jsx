@@ -9,44 +9,44 @@ export default function SwapWidget() {
       "apiUrl": "https://v2.api.squidrouter.com",
       "theme": {
         "borderRadius": {
-          "button-lg-primary": "2.25rem",
-          "button-lg-secondary": "2.75rem",
-          "button-lg-tertiary": "2.95rem",
-          "button-md-primary": "2.65rem",
-          "button-md-secondary": "2.45rem",
+          "button-lg-primary": "3.75rem",
+          "button-lg-secondary": "3.75rem",
+          "button-lg-tertiary": "3.75rem",
+          "button-md-primary": "1.25rem",
+          "button-md-secondary": "1.25rem",
           "button-md-tertiary": "1.25rem",
-          "button-sm-primary": "2.15rem",
-          "button-sm-secondary": "2.25rem",
+          "button-sm-primary": "1.25rem",
+          "button-sm-secondary": "1.25rem",
           "button-sm-tertiary": "1.25rem",
-          "container": "3.45rem",
-          "input": "2.25rem",
-          "menu-sm": "0.75rem",
-          "menu-lg": "1.15rem",
-          "modal": "3.15rem"
+          "container": "1.875rem",
+          "input": "9999px",
+          "menu-sm": "0.9375rem",
+          "menu-lg": "1.25rem",
+          "modal": "1.875rem"
         },
         "fontSize": {
-          "caption": "0.95rem",
-          "body-small": "1.25rem",
-          "body-medium": "1.55rem",
-          "body-large": "1.75rem",
-          "heading-small": "2.15rem",
-          "heading-medium": "2.95rem",
-          "heading-large": "4.15rem"
+          "caption": "0.875rem",
+          "body-small": "1.14375rem",
+          "body-medium": "1.40625rem",
+          "body-large": "1.75625rem",
+          "heading-small": "2.1875rem",
+          "heading-medium": "3.08125rem",
+          "heading-large": "4.40625rem"
         },
         "fontWeight": {
-          "caption": "0.95rem",
-          "body-small": "1.25rem",
-          "body-medium": "1.55rem",
-          "body-large": "1.75rem",
-          "heading-small": "2.15rem",
-          "heading-medium": "2.95rem",
-          "heading-large": "4.15rem"
+          "caption": "400",
+          "body-small": "400",
+          "body-medium": "400",
+          "body-large": "400",
+          "heading-small": "400",
+          "heading-medium": "400",
+          "heading-large": "400"
         },
         "fontFamily": {
           "squid-main": "GeistVariable, sans-serif"
         },
         "boxShadow": {
-          "container": "3.45rem", 0, 0, 0.20), 0px 5px 50px -1px rgba(0, 0, 0, 0.33)"
+          "container": "0px 2px 4px 0px rgba(0, 0, 0, 0.20), 0px 5px 50px -1px rgba(0, 0, 0, 0.33)"
         },
         "color": {
           "grey-100": "#FBFBFD",
@@ -61,15 +61,15 @@ export default function SwapWidget() {
           "royal-300": "#D9BEF4",
           "royal-400": "#B893EC",
           "royal-500": "#9E79D2",
-          "royal-600": "#6F3EBF",
-          "royal-700": "#5A2E9E",
+          "royal-600": "#8353C5",
+          "royal-700": "#6B45A1",
           "status-positive": "#7AE870",
           "status-negative": "#FF4D5B",
           "status-partial": "#F3AF25",
           "highlight-700": "#E4FE53",
           "animation-bg": "#9E79D2",
           "animation-text": "#FBFBFD",
-          "button-lg-primary-bg": "#8A5EFF",
+          "button-lg-primary-bg": "#9E79D2",
           "button-lg-primary-text": "#FBFBFD",
           "button-lg-secondary-bg": "#FBFBFD",
           "button-lg-secondary-text": "#292C32",
@@ -103,8 +103,8 @@ export default function SwapWidget() {
         "send": false
       },
       "priceImpactWarnings": {
-        "warning": 5,
-        "critical": 6
+        "warning": 3,
+        "critical": 5
       },
       "loadPreviousStateFromLocalStorage": true
     }} />
