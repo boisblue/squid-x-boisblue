@@ -19,7 +19,7 @@ export default function SwapWidget() {
           "button-sm-secondary": "1.25rem",
           "button-sm-tertiary": "1.25rem",
           "container": "3.45rem",
-          "input": "9999px",
+          "input": "2.25rem",
           "menu-sm": "0.75rem",
           "menu-lg": "1.25rem",
           "modal": "1.875rem"
