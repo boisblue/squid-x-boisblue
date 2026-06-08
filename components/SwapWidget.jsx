@@ -61,7 +61,7 @@ export default function SwapWidget() {
           "royal-300": "#D9BEF4",
           "royal-400": "#B893EC",
           "royal-500": "#A67BFF",
-          "royal-600": "#6F3EBF",
+          "royal-600": "#8353C5",
           "royal-700": "#6B45A1",
           "status-positive": "#7AE870",
           "status-negative": "#FF4D5B",
