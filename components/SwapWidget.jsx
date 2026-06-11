@@ -18,7 +18,7 @@ export default function SwapWidget() {
           "button-sm-primary": "1.75rem",
           "button-sm-secondary": "2.25rem",
           "button-sm-tertiary": "1.25rem",
-          "container": "2.35rem",
+          "container": "1.25rem",
           "input": "2.25rem",
           "menu-sm": "0.95rem",
           "menu-lg": "1.45rem",
@@ -46,7 +46,7 @@ export default function SwapWidget() {
           "squid-main": "GeistVariable, sans-serif"
         },
         "boxShadow": {
-          "container": "2.35rem", 0, 0, 0.20), 0px 5px 50px -1px rgba(0, 0, 0, 0.33)"
+          "container": "1.25rem", 0, 0, 0.20), 0px 5px 50px -1px rgba(0, 0, 0, 0.33)"
         },
         "color": {
           "grey-100": "#FBFBFD",
