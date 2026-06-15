@@ -28,7 +28,7 @@ export default function SwapWidget() {
           "caption": "0.95rem",
           "body-small": "1.05rem",
           "body-medium": "1.35rem",
-          "body-large": "1.75rem",
+          "body-large": "1.95rem",
           "heading-small": "2.45rem",
           "heading-medium": 500,
           "heading-large": "4.15rem"
@@ -37,7 +37,7 @@ export default function SwapWidget() {
           "caption": "0.95rem",
           "body-small": "1.05rem",
           "body-medium": "1.35rem",
-          "body-large": "1.75rem",
+          "body-large": "1.95rem",
           "heading-small": "2.45rem",
           "heading-medium": 500,
           "heading-large": "4.15rem"
