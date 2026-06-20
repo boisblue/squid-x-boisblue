@@ -9,7 +9,7 @@ export default function SwapWidget() {
       "apiUrl": "https://v2.api.squidrouter.com",
       "theme": {
         "borderRadius": {
-          "button-lg-primary": "4.25rem",
+          "button-lg-primary": "2.25rem",
           "button-lg-secondary": "2.75rem",
           "button-lg-tertiary": "2.95rem",
           "button-md-primary": "2.65rem",
