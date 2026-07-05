@@ -21,7 +21,7 @@ export default function SwapWidget() {
           "container": "2.35rem",
           "input": "1.75rem",
           "menu-sm": "0.95rem",
-          "menu-lg": "1.15rem",
+          "menu-lg": "1.45rem",
           "modal": "1.55rem"
         },
         "fontSize": {
