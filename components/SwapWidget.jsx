@@ -31,7 +31,7 @@ export default function SwapWidget() {
           "body-large": "1.95rem",
           "heading-small": "2.15rem",
           "heading-medium": "2.95rem",
-          "heading-large": "4.15rem"
+          "heading-large": "4.55rem"
         },
         "fontWeight": {
           "caption": "0.95rem",
@@ -40,7 +40,7 @@ export default function SwapWidget() {
           "body-large": "1.95rem",
           "heading-small": "2.15rem",
           "heading-medium": "2.95rem",
-          "heading-large": "4.15rem"
+          "heading-large": "4.55rem"
         },
         "fontFamily": {
           "squid-main": "GeistVariable, sans-serif"
