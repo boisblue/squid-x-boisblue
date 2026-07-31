@@ -66,7 +66,7 @@ export default function SwapWidget() {
           "status-positive": "#7AE870",
           "status-negative": "#FF4D5B",
           "status-partial": "#F3AF25",
-          "highlight-700": "#B8FF1A",
+          "highlight-700": "#C5FF2A",
           "animation-bg": "#9E79D2",
           "animation-text": "#FBFBFD",
           "button-lg-primary-bg": "#B893EC",
