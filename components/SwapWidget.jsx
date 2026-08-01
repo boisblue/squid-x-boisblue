@@ -13,7 +13,7 @@ export default function SwapWidget() {
           "button-lg-secondary": "2.75rem",
           "button-lg-tertiary": "2.95rem",
           "button-md-primary": "2.65rem",
-          "button-md-secondary": "2.45rem",
+          "button-md-secondary": "1.95rem",
           "button-md-tertiary": "1.25rem",
           "button-sm-primary": "2.15rem",
           "button-sm-secondary": "1.65rem",
