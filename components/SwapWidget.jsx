@@ -27,7 +27,7 @@ export default function SwapWidget() {
         "fontSize": {
           "caption": "0.95rem",
           "body-small": "1.25rem",
-          "body-medium": "1.55rem",
+          "body-medium": "1.35rem",
           "body-large": "1.95rem",
           "heading-small": "2.45rem",
           "heading-medium": "2.95rem",
@@ -36,7 +36,7 @@ export default function SwapWidget() {
         "fontWeight": {
           "caption": "0.95rem",
           "body-small": "1.25rem",
-          "body-medium": "1.55rem",
+          "body-medium": "1.35rem",
           "body-large": "1.95rem",
           "heading-small": "2.45rem",
           "heading-medium": "2.95rem",
