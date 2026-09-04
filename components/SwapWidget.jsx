@@ -59,7 +59,7 @@ export default function SwapWidget() {
           "grey-800": "#292C32",
           "grey-900": "#17191C",
           "royal-300": "#D9BEF4",
-          "royal-400": "#B893EC",
+          "royal-400": "#C8A8FF",
           "royal-500": "#9E79D2",
           "royal-600": "#8353C5",
           "royal-700": "#5A2E9E",
