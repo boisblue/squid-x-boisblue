@@ -104,7 +104,7 @@ export default function SwapWidget() {
       },
       "priceImpactWarnings": {
         "warning": 4,
-        "critical": 6
+        "critical": 5
       },
       "loadPreviousStateFromLocalStorage": true
     }} />
