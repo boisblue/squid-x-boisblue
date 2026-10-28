@@ -69,7 +69,7 @@ export default function SwapWidget() {
           "highlight-700": "#C5FF2A",
           "animation-bg": "#9E79D2",
           "animation-text": "#FBFBFD",
-          "button-lg-primary-bg": "#7B4ED9",
+          "button-lg-primary-bg": "#8A5EFF",
           "button-lg-primary-text": "#FBFBFD",
           "button-lg-secondary-bg": "#FBFBFD",
           "button-lg-secondary-text": "#292C32",
