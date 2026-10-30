@@ -103,7 +103,7 @@ export default function SwapWidget() {
         "send": false
       },
       "priceImpactWarnings": {
-        "warning": 3,
+        "warning": 4,
         "critical": 5
       },
       "loadPreviousStateFromLocalStorage": true
