@@ -11,7 +11,7 @@ export default function SwapWidget() {
         "borderRadius": {
           "button-lg-primary": "3.15rem",
           "button-lg-secondary": "2.75rem",
-          "button-lg-tertiary": "2.95rem",
+          "button-lg-tertiary": "4.15rem",
           "button-md-primary": "1.85rem",
           "button-md-secondary": "1.95rem",
           "button-md-tertiary": "1.25rem",
